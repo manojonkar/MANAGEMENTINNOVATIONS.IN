@@ -2495,6 +2495,39 @@ footer{
   transform:translateY(calc(var(--offset) - 8px));
   box-shadow:0 30px 78px rgba(18,27,36,0.12);
 }
+/* FINAL TEAM IMAGE NORMALIZATION */
+.team-grid .team-card{
+  align-self:stretch;
+  display:flex;
+  flex-direction:column;
+}
+.team-avatar{
+  height:312px;
+  aspect-ratio:auto;
+  border-radius:24px;
+  background:linear-gradient(180deg,#fbf7ef 0%,#f3eadc 100%);
+}
+.team-avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 14%;
+}
+.team-grid.team-grid-volunteers .team-avatar{
+  height:326px;
+}
+.team-avatar img[alt="Manoj Onkar"]{object-position:center 12%;}
+.team-avatar img[alt="Ferdi D'souza"]{object-position:center 14%;}
+.team-avatar img[alt="Aljor Perreras"]{object-position:center 14%;}
+.team-avatar img[alt="Vivek Chopra"]{object-position:center 10%;}
+.team-avatar img[alt="Nilesh Surana"]{object-position:center 12%;}
+.team-avatar img[alt="Chetan Khosla"]{object-position:center 10%;}
+.team-avatar img[alt="Prof. Ram"]{object-position:center 12%;}
+.team-avatar img[alt="Vandana Bhansali"]{object-position:center 9%;}
+.team-avatar img[alt="Manoj M M"]{object-position:center 12%;}
+.team-avatar img[alt="Siddharth Surana"]{object-position:center 8%;}
+.team-avatar img[alt="Adesh Gothi"]{object-position:center 10%;}
+.team-avatar img[alt="Shamsundar"]{object-position:center 10%;}
 @media(max-width:1024px){
   .svc-grid,
   .journey-grid{
@@ -2517,6 +2550,8 @@ footer{
   .ws-quote-card:nth-child(even){
     --offset:0px;
   }
+  .team-avatar{height:288px;}
+  .team-grid.team-grid-volunteers .team-avatar{height:304px;}
 }
 @media(max-width:768px){
   .testi-video-band,
@@ -2544,6 +2579,8 @@ footer{
     padding:28px 24px;
     border-radius:24px;
   }
+  .team-avatar{height:320px;}
+  .team-grid.team-grid-volunteers .team-avatar{height:320px;}
 }
 @media(max-width:640px){
   .svc-grid,
@@ -2897,7 +2934,7 @@ footer{
             <div class="t-qmark">&#x201C;</div>
             <p class="t-quote t-quote-short">This ODeX program is one of its kind. It gave me an opportunity to practice learning while the course progressed. The coaching and mentoring from the faculty is immense. The group dynamics is phenomenal. The program challenges the status quo. It gives participants the opportunity to apply the learning directly with clients. It is a must-do program for serious OD professionals.</p>
             <div class="t-person">
-              <img src="assets/inline-669b52b5802d7602.jpg" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:center 20%;flex-shrink:0;border:2px solid rgba(201,168,76,0.4);">
+              <img src="assets/adesh-gothi-new.jpg" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:center 20%;flex-shrink:0;border:2px solid rgba(201,168,76,0.4);">
               <div>
                 <div class="t-name">Adesh Gothi</div>
                 <div class="t-role">Co Founder</div>
@@ -2938,7 +2975,7 @@ footer{
       </div>
 
       <!-- Thumbnail strip -->
-      <div class="t-thumbs" id="t-thumbs"><button class="t-th t-th-active" data-i="0" aria-label="Naveen Sharma"><img src="assets/inline-7511dba04e543922.jpg" alt="Naveen Sharma" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="1" aria-label="Chetan Khosla"><img src="assets/inline-4dd5af398c802a9e.jpg" alt="Chetan Khosla" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="2" aria-label="Rudrappa Mirekar"><img src="assets/inline-c8ec41195b267d0c.png" alt="Rudrappa Mirekar" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="3" aria-label="Arindam Ghosh"><img src="assets/inline-3214d28dcf873d5c.jpg" alt="Arindam Ghosh" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="4" aria-label="Vishwanath Mosale"><img src="assets/inline-c63a4ddd35f76ac3.jpg" alt="Vishwanath Mosale" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="5" aria-label="Surender Singh"><img src="assets/inline-c82c9c2ed856d78b.png" alt="Surender Singh" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="6" aria-label="Alpesh Gandhi"><img src="assets/inline-3349733616167ec6.jpg" alt="Alpesh Gandhi" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="7" aria-label="Manoj Mani"><img src="assets/inline-eaa85379a675ae9a.png" alt="Manoj Mani" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="8" aria-label="Adesh Gothi"><img src="assets/inline-669b52b5802d7602.jpg" alt="Adesh Gothi" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="9" aria-label="Vandana Bhansali"><img src="assets/inline-887c07dd72c2437b.jpg" alt="Vandana Bhansali" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button></div>
+      <div class="t-thumbs" id="t-thumbs"><button class="t-th t-th-active" data-i="0" aria-label="Naveen Sharma"><img src="assets/inline-7511dba04e543922.jpg" alt="Naveen Sharma" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="1" aria-label="Chetan Khosla"><img src="assets/inline-4dd5af398c802a9e.jpg" alt="Chetan Khosla" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="2" aria-label="Rudrappa Mirekar"><img src="assets/inline-c8ec41195b267d0c.png" alt="Rudrappa Mirekar" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="3" aria-label="Arindam Ghosh"><img src="assets/inline-3214d28dcf873d5c.jpg" alt="Arindam Ghosh" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="4" aria-label="Vishwanath Mosale"><img src="assets/inline-c63a4ddd35f76ac3.jpg" alt="Vishwanath Mosale" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="5" aria-label="Surender Singh"><img src="assets/inline-c82c9c2ed856d78b.png" alt="Surender Singh" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="6" aria-label="Alpesh Gandhi"><img src="assets/inline-3349733616167ec6.jpg" alt="Alpesh Gandhi" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="7" aria-label="Manoj Mani"><img src="assets/inline-eaa85379a675ae9a.png" alt="Manoj Mani" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="8" aria-label="Adesh Gothi"><img src="assets/adesh-gothi-new.jpg" alt="Adesh Gothi" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button><button class="t-th" data-i="9" aria-label="Vandana Bhansali"><img src="assets/inline-887c07dd72c2437b.jpg" alt="Vandana Bhansali" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;"/></button></div>
 
     </div><!-- /t-wrap -->
   </div>
