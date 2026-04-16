@@ -1,0 +1,25 @@
+.edge-headless/
+.edge-profile/
+.npm-cache/
+.tmp/
+.vercel/
+.vercel-cache/
+.vercel-home/
+cachetest/
+deploy-cache/
+pip-build-tracker-*/
+pip-ephem-wheel-cache-*/
+pip-install-*/
+pip-target-*/
+pip-unpack-*/
+publish/
+preview-server.err
+preview-server.log
+sp-out.txt
+sp-test.txt
+test-start.txt
+managementinnovations-site-publish.zip
+*.bak.html
+MI Website - index.html
+MI Website.txt
+theory-u-render.html
